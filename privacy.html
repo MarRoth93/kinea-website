@@ -5,23 +5,351 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Kinea</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        :root {
+            --text: #17202a;
+            --muted: #55606b;
+            --bg: #ffffff;
+            --card: #ffffff;
+            --border: #e6e9ee;
+            --link: #0a4d4d;
+            --link-hover: #063636;
+            --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+        }
+
+        html { color-scheme: light; }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            max-width: 920px;
+            margin: 32px auto;
+            padding: 0 18px 42px;
+            line-height: 1.65;
+            color: var(--text);
+            background: radial-gradient(1100px 600px at 10% -10%, rgba(10, 77, 77, 0.10), transparent 60%),
+                        radial-gradient(900px 500px at 90% 0%, rgba(39, 110, 241, 0.08), transparent 55%),
+                        var(--bg);
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 18px 18px 14px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 { margin: 0 0 6px; font-size: 1.85rem; letter-spacing: -0.02em; }
+        h2 { margin-top: 34px; font-size: 1.25rem; letter-spacing: -0.01em; }
+        h3 { margin-top: 18px; font-size: 1.05rem; }
+        p, li { color: var(--text); }
+        .muted { color: var(--muted); }
+        .meta { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+        a { color: var(--link); text-decoration: none; font-weight: 650; }
+        a:hover { color: var(--link-hover); text-decoration: underline; }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 14px;
+            font-size: 0.95rem;
+        }
+        nav a { font-weight: 650; }
+
+        .card {
+            margin-top: 14px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px 18px;
+            box-shadow: var(--shadow);
+        }
+        .toc {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .toc li { margin: 6px 0; }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.92em;
+            background: rgba(17, 24, 39, 0.06);
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+        hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+
+        footer {
+            margin-top: 26px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> January 18, 2026</p>
-    <p>This Privacy Policy describes how Kinea ("we", "us", or "our") collects, uses, and shares your personal information.</p>
-    
-    <h2>1. Information We Collect</h2>
-    <p>We collect your email address for account verification and device identifiers for subscription management.</p>
-    
-    <h2>2. How We Use Your Information</h2>
-    <p>We use your information to provide personalized AI coaching recommendations and manage your subscription status.</p>
-    
-    <h2>3. Contact Us</h2>
-    <p>If you have questions, please contact us at support@kinea-app.com.</p>
-    
-    <p><em>(This is a placeholder. Please replace with your full legal text generated from a service like FreePrivacyPolicy.com)</em></p>
+    <header>
+        <h1>Privacy Policy</h1>
+        <!-- TODO: Replace Operator Name/Address below with your legal entity details. -->
+        <p class="meta"><strong>Effective Date:</strong> February 5, 2026</p>
+        <p class="meta"><strong>Operator:</strong> <span class="muted">MaggyStudio (Germany) — <strong>Address:</strong> [add full address]</span></p>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/terms.html">Terms of Service</a>
+            <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>
+        </nav>
+        <div class="card">
+            <p class="muted" style="margin:0;">
+                This Privacy Policy explains how the Kinea website and mobile app (“Kinea”, “we”, “us”, “our”) collect, use, and share information.
+                If you use Kinea, you agree to this policy.
+            </p>
+            <hr />
+            <strong>Contents</strong>
+            <ol class="toc">
+                <li><a href="#scope">Scope</a></li>
+                <li><a href="#data-we-collect">Information We Collect</a></li>
+                <li><a href="#how-we-use">How We Use Information</a></li>
+                <li><a href="#legal-bases">Legal Bases (EEA/UK)</a></li>
+                <li><a href="#how-we-share">How We Share Information</a></li>
+                <li><a href="#ai">AI / Automated Processing</a></li>
+                <li><a href="#retention">Data Retention</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#choices-rights">Your Choices & Rights</a></li>
+                <li><a href="#us-disclosures">US State Privacy Disclosures</a></li>
+                <li><a href="#international">International Transfers</a></li>
+                <li><a href="#children">Children</a></li>
+                <li><a href="#changes">Changes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </div>
+    </header>
+
+    <h2 id="scope">1. Scope</h2>
+    <p>
+        This Privacy Policy applies to:
+    </p>
+    <ul>
+        <li>The Kinea website at <code>kinea-app.com</code> (including the password reset landing page)</li>
+        <li>The Kinea mobile app</li>
+        <li>Our backend API and related services used to provide Kinea</li>
+    </ul>
+    <p class="muted">
+        Third-party platforms (for example, Google Play) have their own privacy policies and terms. This policy does not cover their practices.
+    </p>
+
+    <h2 id="data-we-collect">2. Information We Collect</h2>
+    <p>
+        We collect information you provide, information generated by your use of Kinea, and limited information from third parties.
+    </p>
+
+    <h3>2.1 Information You Provide</h3>
+    <ul>
+        <li><strong>Account information:</strong> email address, username (if you choose one), and authentication data (password is stored as a hash, not in plain text).</li>
+        <li><strong>Profile & fitness context (optional):</strong> goal (e.g., hypertrophy/strength), gender, birth date, height, weight, and preferences.</li>
+        <li><strong>Workout & training data:</strong> workouts, exercises, sets (e.g., weight, reps), timestamps, and any notes you add.</li>
+        <li><strong>Social features (“Gym Buddies”) data:</strong> friend connections, friend requests, and in-app notifications you send/receive.</li>
+        <li><strong>Content you upload:</strong> if you upload PDFs/papers for research features, we process and store that content.</li>
+        <li><strong>Support communications:</strong> messages you send to us (and the information you include) when requesting help.</li>
+    </ul>
+
+    <h3>2.2 Information Collected Automatically</h3>
+    <ul>
+        <li><strong>Device and app information:</strong> device type, OS version, app version, language/locale, and similar technical details.</li>
+        <li><strong>Log and diagnostic data:</strong> IP address, timestamps, requested pages/endpoints, and basic request metadata (for security and reliability).</li>
+    </ul>
+
+    <h3>2.3 Subscriptions and Advertising</h3>
+    <ul>
+        <li><strong>Subscription status:</strong> we maintain a premium/non-premium status for your account and related entitlement information.</li>
+        <li><strong>Purchases:</strong> purchases are processed by app store providers (e.g., Google Play) and/or subscription management providers (e.g., RevenueCat). We generally do not receive your full payment card details.</li>
+        <li><strong>Rewarded ads (if enabled):</strong> when you watch a rewarded ad, advertising providers (e.g., Google AdMob) may collect device identifiers (such as the advertising ID), ad interaction data, and related technical information to provide and verify the reward.</li>
+    </ul>
+
+    <h3>2.4 Information From Other Users (When You Use Social Features)</h3>
+    <p>
+        If you use “Gym Buddies”, other users may share content with you such as PR notifications and reactions.
+    </p>
+
+    <h2 id="how-we-use">3. How We Use Information</h2>
+    <p>We use information to:</p>
+    <ul>
+        <li>Provide, operate, and improve Kinea (including syncing your workouts across devices).</li>
+        <li>Generate training recommendations, volume analysis, and recovery insights based on your workout history and selected settings.</li>
+        <li>Enable social features (friend requests, comparisons, notifications) when you opt in.</li>
+        <li>Manage premium access, free-tier limits, and rewarded-ad credits.</li>
+        <li>Send transactional emails (e.g., password reset and verification).</li>
+        <li>Prevent fraud and abuse, enforce our Terms, and protect the security and integrity of Kinea.</li>
+    </ul>
+
+    <h2 id="legal-bases">4. Legal Bases (EEA/UK)</h2>
+    <p class="muted">
+        This section applies if you are in the European Economic Area (EEA) or the United Kingdom (UK). If you are elsewhere, legal bases may differ.
+    </p>
+    <p>We process personal information under one or more of the following legal bases:</p>
+    <ul>
+        <li><strong>Contract:</strong> to provide the Service you request (e.g., create an account, store workouts, sync data, deliver recommendations).</li>
+        <li><strong>Legitimate interests:</strong> to secure, maintain, and improve the Service (e.g., prevent abuse, troubleshoot, and maintain reliability), where our interests are not overridden by your rights.</li>
+        <li><strong>Consent:</strong> when required (e.g., for certain optional features, or where local law treats certain fitness/profile inputs as sensitive).</li>
+        <li><strong>Legal obligations:</strong> to comply with applicable laws and enforce our Terms.</li>
+    </ul>
+
+    <h2 id="how-we-share">5. How We Share Information</h2>
+    <p>
+        We share information only as described below.
+    </p>
+
+    <h3>4.1 With Service Providers (Processors)</h3>
+    <p>
+        We use third-party vendors to help deliver Kinea. Depending on your use of features and our configuration,
+        these vendors may process limited information on our behalf:
+    </p>
+    <ul>
+        <li><strong>Hosting and security:</strong> Cloudflare (website delivery/security) and infrastructure providers (e.g., Hetzner) for servers and storage.</li>
+        <li><strong>Email delivery:</strong> Resend (to send password reset and verification emails).</li>
+        <li><strong>Subscriptions:</strong> RevenueCat and app stores (e.g., Google Play) to manage entitlements and purchase status.</li>
+        <li><strong>Advertising (rewarded ads):</strong> Google AdMob (to show rewarded ads and verify rewards).</li>
+        <li><strong>AI providers (for recommendations/analysis):</strong> Google (Gemini for generation and Google embeddings for retrieval).</li>
+    </ul>
+    <p class="muted">
+        Note: Kinea’s evidence base (scientific papers) may be stored in our vector database for retrieval; this is used to generate citations and evidence-based recommendations.
+    </p>
+
+    <h3>4.2 With Other Users (Only When You Choose to Use Social Features)</h3>
+    <p>
+        If you use “Gym Buddies”, some of your information is shared with your selected friends in order to provide the feature.
+        This can include your username and email address, workout comparison stats (e.g., total volume, total sets), and PR shares
+        (e.g., exercise, weight, reps, date), depending on what you share.
+    </p>
+    <p class="muted">
+        Friend discovery: other users can send you a friend request by searching for your username or email address. If someone knows your email address, they may be able to find your account through this feature.
+    </p>
+
+    <h3>4.3 Legal, Safety, and Compliance</h3>
+    <p>
+        We may disclose information if required by law or if we reasonably believe disclosure is necessary to protect rights, safety, and security,
+        investigate fraud, or enforce our Terms.
+    </p>
+
+    <h3>4.4 We Do Not Sell Your Personal Information</h3>
+    <p>
+        We do not sell your personal information in exchange for money. We also do not share your personal information for “cross-context behavioral advertising”
+        in a way that would be considered a “sale” or “sharing” under certain privacy laws, except to the extent that third-party ad technology providers
+        may collect information directly through their SDKs (for example, AdMob) when you use rewarded ads.
+    </p>
+
+    <h2 id="ai">6. AI / Automated Processing</h2>
+    <p>
+        Kinea can generate recommendations and insights using AI models. To do this, we may send limited context to AI providers,
+        such as your recent workout summaries (exercise names, sets, reps, weights, and dates), your goal, and relevant evidence retrieved from scientific literature.
+    </p>
+    <p class="muted">
+        AI outputs can be inaccurate or incomplete. You are responsible for how you use recommendations, and you should use good judgment and consult a professional
+        when appropriate.
+    </p>
+    <p class="muted">
+        We do not use AI to make decisions that produce legal effects or similarly significant impacts on you.
+    </p>
+
+    <h2 id="retention">7. Data Retention</h2>
+    <p>
+        We retain information for as long as needed to provide Kinea and for legitimate business purposes (such as security and dispute resolution).
+    </p>
+    <ul>
+        <li><strong>Account, workouts, and recommendations:</strong> retained until you delete them or delete your account.</li>
+        <li><strong>Our application/server logs:</strong> typically retained up to <strong>30 days</strong> for security and troubleshooting, unless a longer period is required to investigate abuse, comply with law, or resolve disputes.</li>
+        <li><strong>Subscription and fraud-prevention records:</strong> may be retained longer as required by law, platform policies, or for accounting/security purposes.</li>
+    </ul>
+    <p class="muted">
+        If you delete your account, we delete or de-identify associated data from our active systems, subject to necessary retention for legal/security reasons and
+        limitations of third-party systems (e.g., app stores, subscription providers, or hosting/security providers).
+    </p>
+
+    <h2 id="security">8. Security</h2>
+    <p>
+        We use reasonable administrative, technical, and organizational measures designed to protect information. No system is 100% secure, and we cannot guarantee absolute security.
+    </p>
+
+    <h2 id="choices-rights">9. Your Choices & Rights</h2>
+    <p>
+        Depending on where you live, you may have rights regarding your personal information. These may include:
+    </p>
+    <ul>
+        <li>Access to your information</li>
+        <li>Correction of inaccurate information</li>
+        <li>Deletion of your information</li>
+        <li>Portability (receiving a copy in a usable format)</li>
+        <li>Objection or restriction of certain processing</li>
+        <li>Withdrawal of consent (where processing is based on consent)</li>
+    </ul>
+    <p>
+        You can typically update or delete certain information in the app. You can request help with privacy rights by emailing
+        <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>.
+    </p>
+    <p class="muted">
+        If you are in the EEA/UK, you may also have the right to lodge a complaint with your local data protection authority.
+    </p>
+
+    <h3>8.1 Cookies and Similar Technologies</h3>
+    <p>
+        The Kinea website is primarily a static site and does not intentionally set marketing cookies. However, our hosting and security providers (e.g., Cloudflare)
+        may set strictly necessary cookies or use similar technologies to protect against abuse and deliver the website.
+        The Kinea app may use local device storage to support offline functionality.
+    </p>
+
+    <h2 id="us-disclosures">10. US State Privacy Disclosures</h2>
+    <p class="muted">
+        This section provides additional disclosures for residents of certain US states (including California). This is a summary; for full details, see the sections above.
+    </p>
+    <h3>10.1 Categories of Personal Information</h3>
+    <ul>
+        <li><strong>Identifiers:</strong> email address, username, account/user IDs.</li>
+        <li><strong>Internet/Network information:</strong> IP address and server logs related to access to the Service.</li>
+        <li><strong>Commercial information:</strong> subscription/entitlement status (payment details are generally handled by the app store/payment processor).</li>
+        <li><strong>User content and activity:</strong> workouts, sets, notes, uploaded documents (if you upload them), and social interactions if you use Gym Buddies.</li>
+        <li><strong>Inferences:</strong> training insights and recommendations generated from your activity.</li>
+    </ul>
+    <h3>10.2 Purposes</h3>
+    <p>We use these categories for the purposes described in <a href="#how-we-use">Section 3</a>, including providing the Service, personalization, security, and support.</p>
+    <h3>10.3 Disclosure</h3>
+    <p>We disclose information to service providers and partners as described in <a href="#how-we-share">Section 5</a> (e.g., hosting, email, subscriptions, ads, AI providers).</p>
+    <h3>10.4 Sale / Sharing</h3>
+    <p>We do not sell your personal information. If you use rewarded ads, third-party ad providers may collect information directly through their SDKs.</p>
+    <h3>10.5 Your Rights</h3>
+    <p>
+        Subject to applicable law, you may have rights to access, delete, correct, and obtain a copy of your information, and to opt out of certain processing.
+        To exercise rights, contact <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>.
+    </p>
+
+    <h2 id="international">11. International Transfers</h2>
+    <p>
+        Our service providers may process information in countries other than your own. Where required, we use appropriate safeguards for cross-border transfers.
+        For example, if you use AI features, information may be processed by Google and its subprocessors, which may be located outside Germany and the EEA.
+    </p>
+
+    <h2 id="children">12. Children</h2>
+    <p>
+        Kinea is not intended for children under the age of 13 (or the minimum age required by your jurisdiction). We do not knowingly collect personal information from children.
+        If you believe a child has provided us personal information, contact us and we will take appropriate steps to delete it.
+    </p>
+
+    <h2 id="changes">13. Changes</h2>
+    <p>
+        We may update this Privacy Policy from time to time. If we make material changes, we will update the “Effective Date” above and may provide additional notice in the app or on the website.
+    </p>
+
+    <h2 id="contact">14. Contact</h2>
+    <p>
+        Questions or requests can be sent to <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>.
+    </p>
+
+    <footer>
+        <hr />
+        <div>
+            <a href="/index.html">Home</a> · <a href="/terms.html">Terms</a> · <a href="#scope">Back to top</a>
+        </div>
+        <div style="margin-top:10px;">
+            <span class="muted">This document is provided for general informational purposes and should be reviewed for your specific legal requirements.</span>
+        </div>
+    </footer>
 </body>
 </html>

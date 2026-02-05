@@ -5,13 +5,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Kinea</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        :root {
+            --text: #17202a;
+            --muted: #55606b;
+            --bg: #ffffff;
+            --card: #ffffff;
+            --border: #e6e9ee;
+            --link: #0a4d4d;
+            --link-hover: #063636;
+            --shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+            --warn: #8a2c0d;
+        }
+
+        html { color-scheme: light; }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            max-width: 920px;
+            margin: 32px auto;
+            padding: 0 18px 42px;
+            line-height: 1.65;
+            color: var(--text);
+            background: radial-gradient(1100px 600px at 10% -10%, rgba(10, 77, 77, 0.10), transparent 60%),
+                        radial-gradient(900px 500px at 90% 0%, rgba(39, 110, 241, 0.08), transparent 55%),
+                        var(--bg);
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 18px 18px 14px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 { margin: 0 0 6px; font-size: 1.85rem; letter-spacing: -0.02em; }
+        h2 { margin-top: 34px; font-size: 1.25rem; letter-spacing: -0.01em; }
+        h3 { margin-top: 18px; font-size: 1.05rem; }
+        p, li { color: var(--text); }
+        .muted { color: var(--muted); }
+        .meta { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+        a { color: var(--link); text-decoration: none; font-weight: 650; }
+        a:hover { color: var(--link-hover); text-decoration: underline; }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 14px;
+            font-size: 0.95rem;
+        }
+
+        .card {
+            margin-top: 14px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px 18px;
+            box-shadow: var(--shadow);
+        }
+        .toc {
+            margin: 10px 0 0;
+            padding-left: 18px;
+        }
+        .toc li { margin: 6px 0; }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.92em;
+            background: rgba(17, 24, 39, 0.06);
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+        hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+
+        .notice {
+            border: 1px solid rgba(138, 44, 13, 0.25);
+            background: rgba(138, 44, 13, 0.06);
+            border-radius: 14px;
+            padding: 12px 14px;
+        }
+        .notice strong { color: var(--warn); }
+
+        footer {
+            margin-top: 26px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Terms of Service</h1>
-    <p>By using the Kinea app, you agree to these terms.</p>
-    <h2>1. Usage</h2>
-    <p>You agree not to misuse the AI coaching services...</p>
+    <header>
+        <h1>Terms of Service</h1>
+        <!-- TODO: Replace Operator Name/Address below with your legal entity details. -->
+        <p class="meta"><strong>Effective Date:</strong> February 5, 2026</p>
+        <p class="meta"><strong>Operator:</strong> <span class="muted">MaggyStudio (Germany) — <strong>Address:</strong> [add full address]</span></p>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>
+        </nav>
+        <div class="card">
+            <p style="margin:0;">
+                These Terms of Service (“Terms”) govern your access to and use of Kinea, including the Kinea website, mobile app, and related services (the “Service”).
+                By using the Service, you agree to these Terms.
+            </p>
+            <hr />
+            <div class="notice">
+                <strong>Important:</strong> Kinea provides fitness tracking and informational recommendations, not medical advice.
+                Always use good judgment and consult a qualified professional before starting or changing an exercise program.
+            </div>
+            <hr />
+            <strong>Contents</strong>
+            <ol class="toc">
+                <li><a href="#changes">Changes To These Terms</a></li>
+                <li><a href="#eligibility">Eligibility</a></li>
+                <li><a href="#accounts">Accounts</a></li>
+                <li><a href="#service">The Service</a></li>
+                <li><a href="#ai">AI-Generated Outputs</a></li>
+                <li><a href="#health">Health & Safety Disclaimer</a></li>
+                <li><a href="#subscriptions">Subscriptions, Purchases, and Ads</a></li>
+                <li><a href="#acceptable-use">Acceptable Use</a></li>
+                <li><a href="#user-content">User Content</a></li>
+                <li><a href="#ip">Intellectual Property</a></li>
+                <li><a href="#third-parties">Third-Party Services</a></li>
+                <li><a href="#termination">Termination</a></li>
+                <li><a href="#disclaimers">Disclaimers</a></li>
+                <li><a href="#liability">Limitation of Liability</a></li>
+                <li><a href="#indemnity">Indemnity</a></li>
+                <li><a href="#law">Governing Law</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </div>
+    </header>
+
+    <h2 id="changes">1. Changes To These Terms</h2>
+    <p>
+        We may update these Terms from time to time. If we make material changes, we will update the effective date above and may provide additional notice
+        in the app or on the website. Your continued use of the Service after the updated Terms become effective means you accept the changes.
+    </p>
+
+    <h2 id="eligibility">2. Eligibility</h2>
+    <p>
+        You must be at least 13 years old (or the minimum age required in your jurisdiction) to use the Service.
+        If you are under the age of majority where you live, you may use the Service only with permission of a parent or legal guardian.
+    </p>
+
+    <h2 id="accounts">3. Accounts</h2>
+    <ul>
+        <li>You are responsible for maintaining the confidentiality of your login credentials and for all activity under your account.</li>
+        <li>You agree to provide accurate information and keep your account information updated.</li>
+        <li>You must not share accounts or access the Service using someone else’s credentials without permission.</li>
+    </ul>
+
+    <h2 id="service">4. The Service</h2>
+    <p>
+        Kinea helps you track workouts and provides evidence-based recommendations and analysis. Features may change over time.
+        We may add, modify, or remove features, and we may suspend the Service for maintenance, security, or operational reasons.
+    </p>
+
+    <h2 id="ai">5. AI-Generated Outputs</h2>
+    <p>
+        Some features use AI to generate recommendations, summaries, or insights. AI outputs:
+    </p>
+    <ul>
+        <li>May be inaccurate, incomplete, or inappropriate for your specific circumstances.</li>
+        <li>Are provided for informational purposes only and are not a substitute for professional advice.</li>
+        <li>Should be reviewed and applied cautiously, especially if you have injuries or medical conditions.</li>
+    </ul>
+
+    <h2 id="health">6. Health & Safety Disclaimer</h2>
+    <p>
+        You understand and agree that exercise involves risk of injury or worse. You are solely responsible for your health, safety, and decisions.
+        Stop exercising and seek medical attention if you experience dizziness, pain, shortness of breath, or other concerning symptoms.
+    </p>
+    <p class="muted">
+        THE SERVICE DOES NOT PROVIDE MEDICAL ADVICE, DIAGNOSIS, OR TREATMENT. DO NOT DISREGARD PROFESSIONAL MEDICAL ADVICE BECAUSE OF INFORMATION FROM THE SERVICE.
+    </p>
+
+    <h2 id="subscriptions">7. Subscriptions, Purchases, and Ads</h2>
+    <h3>6.1 Subscriptions / Premium Features</h3>
+    <p>
+        Some features require a paid subscription (“Premium”). Subscription purchases and renewals are handled through your app store (for example, Google Play)
+        and/or a subscription management provider (for example, RevenueCat). Your subscription may auto-renew unless you cancel through the app store settings.
+    </p>
+    <h3>6.2 Trials, Pricing, and Taxes</h3>
+    <p>
+        Pricing, trial availability, and taxes are displayed at the time of purchase and may vary by region and platform.
+    </p>
+    <h3>6.3 Refunds and Cancellations</h3>
+    <p>
+        Refunds and cancellations are handled according to the policies of the platform through which you purchased (e.g., Google Play).
+    </p>
+    <h3>6.4 Free Tier Limits and Rewarded Ads</h3>
+    <p>
+        The Service may limit free-tier usage (for example, the number of AI recommendations). If you choose to watch rewarded ads, you may receive additional usage credits.
+        Rewarded ads are provided by third-party ad networks (e.g., Google AdMob) and are subject to their terms and policies.
+    </p>
+
+    <h2 id="acceptable-use">8. Acceptable Use</h2>
+    <p>You agree not to:</p>
+    <ul>
+        <li>Use the Service in a way that violates any law or regulation.</li>
+        <li>Reverse engineer, decompile, attempt to extract source code, or bypass access controls (except where prohibited by law).</li>
+        <li>Interfere with or disrupt the Service, including attempting to overload, scrape, or probe it.</li>
+        <li>Upload or share content that is unlawful, infringing, harmful, or that you do not have the right to use.</li>
+        <li>Use the Service to harass, threaten, or harm others, including through social features.</li>
+    </ul>
+
+    <h2 id="user-content">9. User Content</h2>
+    <p>
+        “User Content” includes workouts, notes, uploaded documents, friend messages/requests, and other content you provide.
+        You retain ownership of your User Content.
+    </p>
+    <p>
+        To operate the Service, you grant us a limited, worldwide, non-exclusive, royalty-free license to host, store, process, reproduce,
+        and display your User Content as necessary to provide and improve the Service (for example, to sync workouts, generate insights, or display shared items to friends you select).
+    </p>
+    <p class="muted">
+        If you upload documents (such as PDFs), you represent that you have the right to upload and use them, and that doing so does not violate any laws or third-party rights.
+    </p>
+
+    <h2 id="ip">10. Intellectual Property</h2>
+    <p>
+        The Service (including software, design, text, graphics, logos, and trademarks) is owned by us or our licensors and is protected by applicable laws.
+        Except as expressly permitted, you may not copy, modify, distribute, sell, or lease any part of the Service.
+    </p>
+
+    <h2 id="third-parties">11. Third-Party Services</h2>
+    <p>
+        The Service may integrate with third-party services such as Cloudflare (delivery/security), Google Play (distribution and payments),
+        RevenueCat (subscription status), Resend (email delivery), Google AdMob (rewarded ads), and Google AI services (Gemini and embeddings).
+        Your use of third-party services may be governed by their terms and privacy policies.
+    </p>
+
+    <h2 id="termination">12. Termination</h2>
+    <p>
+        You may stop using the Service at any time. We may suspend or terminate your access if you violate these Terms or if necessary to protect the Service or other users.
+        We may also discontinue the Service (in whole or in part) with reasonable notice where practical.
+    </p>
+
+    <h2 id="disclaimers">13. Disclaimers</h2>
+    <p class="muted">
+        THE SERVICE IS PROVIDED “AS IS” AND “AS AVAILABLE.” TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
+        INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+    </p>
+
+    <h2 id="liability">14. Limitation of Liability</h2>
+    <p>
+        To the extent permitted by applicable law, our liability is limited as follows:
+    </p>
+    <ul>
+        <li><strong>Unlimited liability</strong> for intent and gross negligence.</li>
+        <li><strong>Unlimited liability</strong> for injury to life, body, or health.</li>
+        <li><strong>Unlimited liability</strong> under mandatory laws (including the Product Liability Act) and for any guarantees we expressly provide.</li>
+        <li>For <strong>slight negligence</strong>, we are liable only for breach of essential contractual obligations (cardinal duties) and only up to the typical, foreseeable damage.</li>
+        <li>Otherwise, liability for slight negligence is excluded to the maximum extent permitted by law.</li>
+    </ul>
+    <p class="muted">
+        Nothing in these Terms limits mandatory consumer rights or liability that cannot be limited under applicable law.
+    </p>
+
+    <h2 id="indemnity">15. Indemnity</h2>
+    <p>
+        You agree to indemnify and hold us harmless from any claims, liabilities, damages, losses, and expenses (including reasonable attorneys’ fees)
+        arising out of or in any way connected with your use of the Service, your User Content, or your violation of these Terms.
+    </p>
+
+    <h2 id="law">16. Governing Law</h2>
+    <p>
+        These Terms are governed by the laws of <strong>Germany</strong>,
+        without regard to conflict of law principles.
+        If you are a consumer and mandatory consumer protection laws in your country of residence apply, those mandatory provisions remain unaffected.
+    </p>
+
+    <h2 id="contact">17. Contact</h2>
+    <p>
+        Questions about these Terms can be sent to <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>.
+    </p>
+
+    <footer>
+        <hr />
+        <div>
+            <a href="/index.html">Home</a> · <a href="/privacy.html">Privacy</a> · <a href="#eligibility">Back to top</a>
+        </div>
+        <div style="margin-top:10px;">
+            <span class="muted">This document is provided for general informational purposes and should be reviewed for your specific legal requirements.</span>
+        </div>
+    </footer>
     </body>
 </html>
