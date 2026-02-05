@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.kinea.app",
+      "sha256_cert_fingerprints": [
+        "26:46:BB:9D:85:61:93:5A:E3:ED:CE:0A:A0:20:30:27:3F:FC:87:7C:DC:CC:23:68:B0:F6:FC:F8:0F:9A:B5:D4"
+      ]
+    }
+  }
+]
