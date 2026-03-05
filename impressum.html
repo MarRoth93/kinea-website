@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Kinea</title>
+    <meta name="description" content="Impressum und rechtliche Anbieterkennzeichnung fuer Kinea.">
+    <style>
+        :root {
+            --text: #17202a;
+            --muted: #55606b;
+            --bg: #ffffff;
+            --card: rgba(255, 255, 255, 0.9);
+            --border: #e6e9ee;
+            --link: #0a4d4d;
+            --link-hover: #063636;
+            --shadow: 0 14px 36px rgba(17, 24, 39, 0.08);
+            --accent: rgba(10, 77, 77, 0.08);
+        }
+
+        html { color-scheme: light; }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 980px;
+            margin: 32px auto;
+            padding: 0 18px 42px;
+            line-height: 1.68;
+            color: var(--text);
+            background:
+                radial-gradient(1100px 600px at 10% -10%, rgba(10, 77, 77, 0.10), transparent 60%),
+                radial-gradient(900px 500px at 90% 0%, rgba(39, 110, 241, 0.08), transparent 55%),
+                var(--bg);
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.86);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 20px 20px 16px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 { margin: 0 0 8px; font-size: 1.95rem; letter-spacing: -0.02em; }
+        h2 { margin-top: 34px; font-size: 1.28rem; letter-spacing: -0.01em; }
+        p, li { color: var(--text); }
+        .meta { margin: 0 0 4px; color: var(--muted); font-size: 0.96rem; }
+        .muted { color: var(--muted); }
+
+        a { color: var(--link); text-decoration: none; font-weight: 650; }
+        a:hover { color: var(--link-hover); text-decoration: underline; }
+
+        nav {
+            margin-top: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 14px;
+            font-size: 0.95rem;
+        }
+
+        .card {
+            margin-top: 16px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .intro {
+            background: linear-gradient(180deg, rgba(10, 77, 77, 0.06), rgba(10, 77, 77, 0.02));
+        }
+
+        .note {
+            border-left: 4px solid #0a4d4d;
+            padding: 10px 14px;
+            background: var(--accent);
+            border-radius: 12px;
+        }
+
+        footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Impressum</h1>
+        <p class="meta"><strong>Stand:</strong> 5. Maerz 2026</p>
+        <p class="meta"><strong>Anbieter:</strong> Marco Rothermel, handelnd unter Maggy Studio</p>
+        <p class="meta"><strong>Anschrift:</strong> Biegenstrasse 24, 35037 Marburg, Deutschland</p>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Service</a>
+            <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>
+        </nav>
+        <div class="card intro">
+            <p style="margin:0;">
+                Dieses Impressum gilt fuer das Angebot unter <strong>kinea-app.com</strong> sowie fuer die mobile App <strong>Kinea</strong>, soweit dort gesetzliche Anbieterangaben erforderlich sind.
+            </p>
+        </div>
+    </header>
+
+    <h2>Angaben gemaess Paragraf 5 DDG</h2>
+    <div class="card">
+        <p style="margin:0;">
+            <strong>Marco Rothermel</strong><br>
+            handelnd unter <strong>Maggy Studio</strong><br>
+            Biegenstrasse 24<br>
+            35037 Marburg<br>
+            Deutschland
+        </p>
+    </div>
+
+    <h2>Kontakt</h2>
+    <div class="card">
+        <p style="margin:0;">
+            E-Mail: <a href="mailto:support@kinea-app.com">support@kinea-app.com</a>
+        </p>
+    </div>
+
+    <h2>Inhaltlich verantwortlich nach Paragraf 18 Abs. 2 MStV</h2>
+    <div class="card">
+        <p style="margin:0;">
+            Marco Rothermel<br>
+            Biegenstrasse 24<br>
+            35037 Marburg<br>
+            Deutschland
+        </p>
+    </div>
+
+    <h2>Verbraucherstreitbeilegung</h2>
+    <div class="card">
+        <p>
+            Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+        <p class="muted" style="margin-bottom:0;">
+            Hinweis: Die fruehere EU-Online-Streitbeilegungsplattform wird nicht mehr betrieben. Massgeblich ist daher insbesondere die Information nach Paragraf 36 VSBG.
+        </p>
+    </div>
+
+    <div class="note" style="margin-top:24px;">
+        Wenn sich Anbieterangaben, Kontaktwege oder regulatorische Pflichten aendern, sollte dieses Impressum vor dem naechsten Release oder Website-Deploy aktualisiert werden.
+    </div>
+
+    <footer>
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/terms.html">Terms of Service</a> ·
+        <a href="/index.html">Home</a>
+    </footer>
+</body>
+</html>
