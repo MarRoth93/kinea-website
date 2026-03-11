@@ -5,6 +5,7 @@
       {
         "appID": "MCH32S4BF7.com.kinea.app",
         "paths": [
+          "/reset-password",
           "/reset-password/*",
           "/verify-email"
         ]
